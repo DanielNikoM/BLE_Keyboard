@@ -1,2 +1,2 @@
-config SHILED_TUBETEST
+config BLE_Keyboard
     def_bool $(shields_list_contains, BLE_Keyboard)
