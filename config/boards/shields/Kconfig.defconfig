@@ -1,5 +1,7 @@
 if BLE_Keyboard
-    config ZMK_KEYBOARD_NAME
-        default "BLE_Keyboard"
+config ZMK_KEYBOARD_NAME
+    default "BLE Keyboard"
 
 endif
+
+
