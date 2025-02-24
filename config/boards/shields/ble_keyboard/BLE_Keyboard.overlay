@@ -1,0 +1,21 @@
+#include <dt-bindings/zmk/matrix_transform.h> // Put this with the other includes at the top of your overlay
+
+/ {
+    chosen {
+        zmk,kscan = &kscan0;
+    };
+
+    kscan0: kscan0 {
+        compatible = "zmk,kscan-gpio-matrix";
+        label = "kscan0";
+
+        input-gpios =   
+            <&nice_nano_v2 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&nice_nano_v2 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&nice_nano_v2 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&nice_nano_v2 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&nice_nano_v2 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&nice_nano_v2 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            ;
+    };
+};
